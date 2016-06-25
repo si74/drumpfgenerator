@@ -11,6 +11,7 @@ import {
   Text,
   View,
   TouchableHighlight
+  //Image
 } from 'react-native';
 
 import {
@@ -23,10 +24,37 @@ class AwesomeProject extends Component {
     super();
     this._tweet = this._tweet.bind(this);
     this._generate = this._generate.bind(this);
+    this.state = {
+      quote : "click below",
+      photo : "trump1.jpg"
+    }
+    // TODO(sneha): this is a temp fix for quick pitch purposes. 
+    this.opts = [
+      {
+        quote : "Just arrived in Scotland. Place is going wild over the vote. They took their country back, just like we will take America back. No games! #trumpparodyBS",
+        photo: "images/trump2.jpg",
+      },
+      {
+        quote : "B #trumpparodyBS",
+        photo: "images/trump3.jpg",
+      },
+      {
+        quote : "C #trumpparodyBS",
+        photo: "images/trump4.jpg",
+      },
+      {
+        quote : "C #trumpparodyBS",
+        photo: "images/trump5.jpg",
+      },
+      {
+        quote : "D #trumpparodyBS",
+        photo: "images/trump6.jpg",
+      }
+    ]
   }
 
   _tweet() {
-
+        // TODO(sneha): linking libraries totally broken so this is def not working
         KDSocialShare.tweet({
                            'text':'Global democratized marketplace for art',
                            'link':'https://artboost.com/',
@@ -42,6 +70,9 @@ class AwesomeProject extends Component {
 
   _generate(){
 
+    val = Math.floor(Math.random() * 5)
+    this.setState({"quote":this.opts[val].quote});
+
   }
 
     
@@ -51,11 +82,14 @@ class AwesomeProject extends Component {
         <Text style={styles.welcome}>
           Welcome to the drumpf tweet generator!
         </Text>
-        
+        <Text>
+          {this.state.quote}
+        </Text>
         <TouchableHighlight onPress={this._generate}>
           <View style={styles.generate}>
            <Text style={styles.generate2}>#</Text>
-          </View>
+        </View>
+        //<Image style={styles.icon} source={require('images/trump1.jpg')} />
         </TouchableHighlight>
         <TouchableHighlight onPress={this._tweet}>
           <View style={styles.tweet}>

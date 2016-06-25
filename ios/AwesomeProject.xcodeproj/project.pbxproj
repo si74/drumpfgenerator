@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -21,11 +22,13 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		5BC00C15EF8B48BBBF969B19 /* libRCTWebSocketDebugger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB188984A3C46E5BE74C886 /* libRCTWebSocketDebugger.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		F56E04691D1EE5A0003E9E99 /* KDSocialShare.h in Frameworks */ = {isa = PBXBuildFile; fileRef = F56E04671D1EE5A0003E9E99 /* KDSocialShare.h */; };
 		F56E04761D1EE7A8003E9E99 /* KDSocialShare.m in Frameworks */ = {isa = PBXBuildFile; fileRef = F56E04751D1EE7A8003E9E99 /* KDSocialShare.m */; };
 		F56E04781D1EE864003E9E99 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56E04771D1EE864003E9E99 /* Social.framework */; };
-		5BC00C15EF8B48BBBF969B19 /* libRCTWebSocketDebugger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB188984A3C46E5BE74C886 /* libRCTWebSocketDebugger.a */; };
+		F56E04A51D1F0D92003E9E99 /* RNShare.xcodeproj in Frameworks */ = {isa = PBXBuildFile; fileRef = F56E049F1D1F0D5C003E9E99 /* RNShare.xcodeproj */; };
+		F56E04A61D1F0DEE003E9E99 /* libRNShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F56E04A41D1F0D5C003E9E99 /* libRNShare.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +109,27 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
+		F56E049B1D1F0C7B003E9E99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E85F0DCB4BA8420B8C6F4826 /* ReactNativeSocialShare.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 13B07F961A680F5B00A75B9A;
+			remoteInfo = ReactNativeSocialShare;
+		};
+		F56E049D1D1F0C7B003E9E99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E85F0DCB4BA8420B8C6F4826 /* ReactNativeSocialShare.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 00E356EE1AD99517003FC87E;
+			remoteInfo = ReactNativeSocialShareTests;
+		};
+		F56E04A31D1F0D5C003E9E99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F56E049F1D1F0D5C003E9E99 /* RNShare.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNShare;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -130,12 +154,13 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		CBB188984A3C46E5BE74C886 /* libRCTWebSocketDebugger.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTWebSocketDebugger.a; sourceTree = "<group>"; };
+		E85F0DCB4BA8420B8C6F4826 /* ReactNativeSocialShare.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeSocialShare.xcodeproj; path = "../node_modules/react-native-social-share/ReactNativeSocialShare.xcodeproj"; sourceTree = "<group>"; };
 		F56E04671D1EE5A0003E9E99 /* KDSocialShare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KDSocialShare.h; path = "../node_modules/react-native-social-share/iOS/KDSocialShare.h"; sourceTree = "<group>"; };
 		F56E04681D1EE5A0003E9E99 /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; name = main.jsbundle; path = "../node_modules/react-native-social-share/iOS/main.jsbundle"; sourceTree = "<group>"; };
 		F56E04751D1EE7A8003E9E99 /* KDSocialShare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = KDSocialShare.m; path = "../node_modules/react-native-social-share/iOS/KDSocialShare.m"; sourceTree = "<group>"; };
 		F56E04771D1EE864003E9E99 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		E85F0DCB4BA8420B8C6F4826 /* ReactNativeSocialShare.xcodeproj */ = {isa = PBXFileReference; name = "ReactNativeSocialShare.xcodeproj"; path = "../node_modules/react-native-social-share/ReactNativeSocialShare.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		CBB188984A3C46E5BE74C886 /* libRCTWebSocketDebugger.a */ = {isa = PBXFileReference; name = "libRCTWebSocketDebugger.a"; path = "libRCTWebSocketDebugger.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		F56E049F1D1F0D5C003E9E99 /* RNShare.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNShare.xcodeproj; path = "../node_modules/react-native-share/ios/RNShare.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +176,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F56E04A61D1F0DEE003E9E99 /* libRNShare.a in Frameworks */,
+				F56E04A51D1F0D92003E9E99 /* RNShare.xcodeproj in Frameworks */,
 				F56E04781D1EE864003E9E99 /* Social.framework in Frameworks */,
 				F56E04761D1EE7A8003E9E99 /* KDSocialShare.m in Frameworks */,
 				F56E04691D1EE5A0003E9E99 /* KDSocialShare.h in Frameworks */,
@@ -303,6 +330,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				F56E049F1D1F0D5C003E9E99 /* RNShare.xcodeproj */,
 				F56E04771D1EE864003E9E99 /* Social.framework */,
 				F56E04751D1EE7A8003E9E99 /* KDSocialShare.m */,
 				F56E04671D1EE5A0003E9E99 /* KDSocialShare.h */,
@@ -321,6 +349,23 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* AwesomeProject.app */,
 				00E356EE1AD99517003FC87E /* AwesomeProjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F56E048D1D1F0C7A003E9E99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F56E049C1D1F0C7B003E9E99 /* ReactNativeSocialShare.app */,
+				F56E049E1D1F0C7B003E9E99 /* ReactNativeSocialShareTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F56E04A01D1F0D5C003E9E99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F56E04A41D1F0D5C003E9E99 /* libRNShare.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -431,6 +476,14 @@
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
+				{
+					ProductGroup = F56E048D1D1F0C7A003E9E99 /* Products */;
+					ProjectRef = E85F0DCB4BA8420B8C6F4826 /* ReactNativeSocialShare.xcodeproj */;
+				},
+				{
+					ProductGroup = F56E04A01D1F0D5C003E9E99 /* Products */;
+					ProjectRef = F56E049F1D1F0D5C003E9E99 /* RNShare.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -509,6 +562,27 @@
 			fileType = archive.ar;
 			path = libRCTText.a;
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F56E049C1D1F0C7B003E9E99 /* ReactNativeSocialShare.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ReactNativeSocialShare.app;
+			remoteRef = F56E049B1D1F0C7B003E9E99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F56E049E1D1F0C7B003E9E99 /* ReactNativeSocialShareTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReactNativeSocialShareTests.xctest;
+			remoteRef = F56E049D1D1F0C7B003E9E99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F56E04A41D1F0D5C003E9E99 /* libRNShare.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNShare.a;
+			remoteRef = F56E04A31D1F0D5C003E9E99 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -601,12 +675,12 @@
 				INFOPLIST_FILE = AwesomeProjectTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AwesomeProject.app/AwesomeProject";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AwesomeProject.app/AwesomeProject";
 			};
 			name = Debug;
 		};
@@ -618,12 +692,12 @@
 				INFOPLIST_FILE = AwesomeProjectTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AwesomeProject.app/AwesomeProject";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AwesomeProject.app/AwesomeProject";
 			};
 			name = Release;
 		};
